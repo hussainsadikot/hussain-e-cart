@@ -21,14 +21,14 @@ const Header = () => {
         }
          {isAuthenticated ? (
            
-              <button className='button'
+              <button className='log-in-out'
                 onClick={() => logout({ returnTo: window.location.origin })}>
                 Log Out
               </button>
           
           ) : (
            
-              <button className='button' onClick={() => loginWithRedirect()}>Log In</button>
+              <button className='log-in-out' onClick={() => loginWithRedirect()}>Log In</button>
             
           )}
         <Link to={"/cart"}><FiShoppingBag/>

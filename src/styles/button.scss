@@ -37,3 +37,17 @@
       place-items: center;
     }
   }
+  .log-in-out{
+   
+        cursor: pointer;
+        background-color: $secondary;
+        border: none;
+        color: $primary;
+        font-size: 1.2rem;
+        margin: 0 1rem;
+        transition: all 0.3s;
+        &:hover{
+            opacity: 0.5;
+        }
+  
+  }
