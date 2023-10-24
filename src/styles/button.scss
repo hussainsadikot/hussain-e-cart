@@ -1,0 +1,39 @@
+.add-to-cart-btn {
+    cursor: pointer;
+    background-color: $secondary;
+    border: none;
+    padding: 0.5rem;
+    color: $tertiary;
+    border-radius: 5px;
+    
+    font-weight: 500;
+  
+
+    &:hover {
+        background-color: $secondaryDark;
+    }
+}
+.quant-button {
+    display: flex;
+    align-items: center;
+   
+    .inc-dec-btn {
+      width: 30px;
+      height: 30px;
+      border: none;
+      background-color: $secondary;
+      color: $tertiary;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background-color: $primaryDark;
+      }
+    }
+
+    p {
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+    }
+  }
