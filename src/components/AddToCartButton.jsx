@@ -27,14 +27,16 @@ const AddToCartButton = ({ id, name, price, imgSrc, discount }) => {
     
          
             loginWithRedirect()
-        }
-        
+        }else{
+
             dispatch({
                 type: 'addToCart',
                 payload: { id, name, price, quantity:1, imgSrc, discount },
             });
             toast.success("Added to Cart")
             dispatch({type:"calculatePrice"})
+        }
+        
         
     
       }
