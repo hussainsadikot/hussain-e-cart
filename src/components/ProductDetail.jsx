@@ -3,9 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { fetchProduct } from '../redux/productSlice';
 import noImage from  '../assests/no-product.png'
-import { TbTruckDelivery, TbReplace } from "react-icons/tb";
-import { MdSecurity } from "react-icons/md";
-import FormatPrice from '../utils/FormatePrice';
 import DetailsThumb from './DetailsThumb';
 import '../styles/productdetail.scss'
 import AddToCartButton from './AddToCartButton';
@@ -15,9 +12,7 @@ const ProductDetail = () => {
     const myRef = useRef();
     const givenId = parseInt(productId)
     console.log("given id is " + givenId + " productId is " + productId)
-    // const  productList  = useSelector((state) => state.product.productList);
-    // const singleProduct = productList.filter((item)=>item.id===productId)
-    // console.log(singleProduct)
+   
     
     
     const dispatch = useDispatch();
@@ -25,8 +20,7 @@ const ProductDetail = () => {
         console.log('Fetching product details for productId:', givenId);
 
         dispatch(fetchProduct(givenId))
-        // const { index } = this;
-            // myRef.current.children[index].className = "active";
+      
     }, [dispatch, givenId,productId])
 
     const noImageArray = [noImage]

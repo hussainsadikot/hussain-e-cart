@@ -116,8 +116,8 @@ const Home = () => {
                   name={product.title}
                   price={product.price}
                   id={product.id}
-                  handler={addToCartHandler}
-                  quantity={null}
+                 
+                 
                   discount={product.discountPercentage}
                 />
               ))
