@@ -49,20 +49,7 @@ const Home = () => {
   const debounceChange = debounce(handleChange, 500);
   const dispatch = useDispatch()
   
-  const {cartItems} = useSelector(state=>state.cart)
-  const addToCartHandler=(options)=>{
-    // console.log(options)
-    if(isAuthenticated){
-
-      dispatch({type:"addToCart", payload:options})
-      toast.success("Added to Cart")
-      dispatch({type:"calculatePrice"})
-    }
-    else{
-      loginWithRedirect()
-    }
-
-  }
+ 
   function handleChange (event) {
     const query = event.target.value;
     dispatch(searchProducts(query));

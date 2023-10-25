@@ -59,10 +59,7 @@ const ProductDetail = () => {
         }
         gimages[index].className = "active";
     };
-    // useEffect(() => {
-    //     const { index } = this;
-    //     myRef.current.children[index].className = "active";
-    // }, []);
+   
 
 
     return (
